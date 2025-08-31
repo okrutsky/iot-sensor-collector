@@ -1,0 +1,38 @@
+#includ <stdio.h>
+#include <math.h>
+
+int main() {
+
+    const double k = 8,99e9;
+
+    // Variables for charges and distance
+
+    double q1, q2, r;
+    double force;
+
+    // Input charges and distnace
+
+    printf("Enter charge q1 (C): ");
+    scanf("%lf", &q1);
+    printf("Enter charge q2 (C): ");
+    scanf("%lf", &q2);
+    printf("Enter distance r (m): ");
+    scanf("%lf", &r);
+
+    // Calculat force magnitude
+    force = k* fabs(q1*q2) / (r*r);
+
+    // Print results
+    printf("The magnitude of the electrostatic force is: %.2e N\n", force);
+
+    // Determine direction
+    if (q1*q2 > 0) {
+        printf("The force is repulsive.\n");
+    } else {
+        printf("The force is attractive.\n");
+    } else {
+        printf("No force (one charge is zero).\n");
+    }
+    return 0;
+
+}

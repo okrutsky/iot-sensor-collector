@@ -1,0 +1,10 @@
+int main() {
+    int a = 25, b = 5;
+
+    printf("a&b: %d\n", a&b); //AND
+    printf("a|b: %d\n", a|b); //OR
+    printf("a^b: %d\n", a^b); //XOR
+    printf("~a: %d\n", ~a); //NOT
+
+        return 0;
+}
