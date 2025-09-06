@@ -1,10 +1,12 @@
-public static void Main{String[] args} {
+public class BubbleSort {
 
-    	int[] arr = { 5, 3, 8, 2, 4 }; // declaring array
+	public static void Main(String[] args) {
+		
+		int[] arr = { 5, 3, 8, 2, 4 }; // declaring array
 		
 		for (int i = 0; i < arr.length - 1; i++) { // first cycle for the whole array
 			
-			// Inner loop (compares adjasment elements)
+			// Inner loop (compares adjasment elements
 			for (int j = 0; j < arr.length - 1; j++) {  
 				// Swap arr[j] and arr [j+1]
 				int tmp = arr[j];
@@ -16,3 +18,4 @@ public static void Main{String[] args} {
 			System.out.println(num + "");
 		}
 	}
+}
